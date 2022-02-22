@@ -1,0 +1,9 @@
+.idea
+node_modules
+dist
+.vscode
+.DS_Store
+*.jpg
+*.png
+*.jpep
+*error.log

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "target": "es2017",
+    "outDir": "./dist"
+  },
+  "exclude": ["./tests"]
+}
