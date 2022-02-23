@@ -51,7 +51,7 @@ yarn test
  PASS  tests/large.spec.ts (20.457 s)
 ```
 
-## API
+## Use
 ### download
 `download(url: string | URL | UrlObject, fileName: string): Promise<string>`
 

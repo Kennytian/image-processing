@@ -1,7 +1,5 @@
 import { download, flip } from '../src/libs';
 
-jest.setTimeout(1000 * 60 * 60);
-
 describe('large file', () => {
   let filePath = '';
 

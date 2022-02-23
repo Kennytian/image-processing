@@ -1,6 +1,6 @@
 {
-  "name": "image-process",
-  "version": "1.0.0",
+  "name": "image-processing",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
     "main": "ts-node src/main.ts",
     "map": "ts-node src/map.ts",
     "start": "node dist/main.js",
-    "test": "jest ./tests"
+    "test": "jest"
   },
   "dependencies": {
     "sharp": "^0.30.1",

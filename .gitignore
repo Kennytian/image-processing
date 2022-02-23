@@ -5,5 +5,5 @@ dist
 .DS_Store
 *.jpg
 *.png
-*.jpep
+*.jpeg
 *error.log
