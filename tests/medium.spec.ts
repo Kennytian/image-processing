@@ -1,6 +1,6 @@
 import { download, flip } from '../src/libs';
 
-describe('small file', () => {
+describe('medium file', () => {
   let filePath = '';
 
   test('test download function', async () => {
@@ -13,6 +13,17 @@ describe('small file', () => {
   test('test flip function', async () => {
     const outputInfo = await flip(filePath, 'building');
     expect(outputInfo).toBeTruthy();
+    expect(outputInfo?.width).toBeGreaterThan(0);
+    expect(outputInfo?.height).toBeGreaterThan(0);
+    expect(outputInfo?.size).toBeGreaterThan(0);
+    expect(outputInfo).toMatchObject({
+      format: 'jpeg',
+      width: expect.any(Number),
+      height: expect.any(Number),
+      channels: expect.any(Number),
+      premultiplied: expect.any(Boolean),
+      size: expect.any(Number)
+    });
   });
 });
 

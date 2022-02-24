@@ -5,10 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "book": "ts-node src/book.ts",
     "lint": "eslint ./src --fix",
     "main": "ts-node src/main.ts",
-    "map": "ts-node src/map.ts",
     "start": "node dist/main.js",
     "test": "jest"
   },

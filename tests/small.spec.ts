@@ -13,7 +13,14 @@ describe('small file', () => {
   test('test flip function', async () => {
     const outputInfo = await flip(filePath, 'small');
     expect(outputInfo).toBeTruthy();
-    expect(outputInfo).toMatchObject({ format: 'jpeg' });
+    expect(outputInfo).toMatchObject({
+      format: 'jpeg',
+      width: expect.any(Number),
+      height: expect.any(Number),
+      channels: expect.any(Number),
+      premultiplied: expect.any(Boolean),
+      size: expect.any(Number)
+    });
   });
 });
 

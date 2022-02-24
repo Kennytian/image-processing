@@ -13,6 +13,7 @@ describe('large file', () => {
   test('test flip function', async () => {
     const outputInfo = await flip(filePath, 'map');
     expect(outputInfo).toBeTruthy();
+    expect(outputInfo).toMatchObject({ format: 'jpeg' });
   });
 });
 
